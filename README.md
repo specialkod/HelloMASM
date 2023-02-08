@@ -3,14 +3,12 @@ Simple "Hello World" type Windows program written in x86 assembly language for t
 
 **32-bit version:**
 
-Assemble with `ml /c /coff HelloMASM_IA-32.asm`
-
-Link with `link /SUBSYSTEM:CONSOLE HelloMASM_IA-32.obj`
+- Assemble with `ml /c /coff HelloMASM_IA-32.asm`
+- Link with `link /SUBSYSTEM:CONSOLE HelloMASM_IA-32.obj`
 
 **64-bit version:**
 
-Assemble with `ml64 /c HelloMASM_x86-64.asm`
+- Assemble with `ml64 /c HelloMASM_x86-64.asm`
+- Link with `link /SUBSYSTEM:CONSOLE /ENTRY:Start HelloMASM_x86-64.obj`
 
-Link with `link /SUBSYSTEM:CONSOLE /ENTRY:Start HelloMASM_x86-64.obj`
-
-MASM32 and MASM64 can be obtained from http://www.masm32.com/
+MASM32 and MASM64 can be obtained from https://www.masm32.com
