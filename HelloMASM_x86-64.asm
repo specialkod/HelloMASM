@@ -1,8 +1,8 @@
 includelib \masm64\lib64\kernel32.lib
 
-GetStdHandle	proto :DWORD
-WriteConsoleA	proto :PTR, :PTR, :DWORD, :PTR, :DWORD
-ExitProcess	proto :DWORD
+GetStdHandle	proto :QWORD
+WriteConsoleA	proto :PTR, :PTR, :QWORD, :PTR, :QWORD
+ExitProcess	proto :QWORD
 
 .DATA
 	output 	db "Hello MASM!", 2 DUP(0Ah), "This program was written in 64-bit x86 assembly language.", 0Ah, 0
